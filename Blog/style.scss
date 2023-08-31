@@ -1,0 +1,324 @@
+@import '../_var';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 53px;
+    padding-bottom: 56px;
+
+    &__left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+
+        &_title {
+            font-family: $mainFontFamily;
+            font-size: 40px;
+            font-weight: normal;
+            line-height: 125%;
+            color: $titleColor;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 50px;
+        align-items: center;
+
+        &_menu-item {
+            color: $titleColor;
+            text-align: center;
+            font-family: $secondFontFamily;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 125%;
+        }
+    }
+}
+
+.top-box {
+    background: url('../img/Photo.jpg') no-repeat center center;
+    height: 356px;
+    width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    &__content {
+        display: flex;
+        width: 503px;
+        padding: 41px 78px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        border-radius: 37px 37px 0px 0px;
+        background: #FFF;
+    }
+
+    &__title {
+        color: $titleColor;
+        font-family: $mainFontFamily;
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 125%;
+    }
+
+    &__text {
+        color: $textColor;
+        font-family: $secondFontFamily;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.22px;
+    }
+}
+
+.post-box {
+    display: flex;
+    // width: 1201px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 27px;
+    margin-bottom: 150px;
+
+    &__heading {
+        color: $titleColor;
+        font-family: $mainFontFamily;
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 125%;
+        letter-spacing: 1px;
+    }
+
+    &__main {
+        display: flex;
+        // width: 1201px;
+        padding: 22px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 65px;
+
+        border-radius: 62px;
+        border: 1px solid #E7E7E7;
+        box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+    }
+
+    &__photo {
+        border-radius: 62px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        width: 489px;
+    }
+
+    &__title {
+        color: $titleColor;
+        font-family: $mainFontFamily;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 125%;
+        letter-spacing: 0.5px;
+        margin-bottom: 22px;
+        width: 463px;
+    }
+
+    &__text {
+        color: $textColor;
+        font-family: $secondFontFamily;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.22px;
+        margin-bottom: 41px;
+        width: 469px;
+    }
+
+    &__date {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &_number {
+            color: $textColor;
+            font-family: $secondFontFamily;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0.16px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.articles-news {
+    &__title {
+        color: $titleColor;
+        text-align: start;
+        font-family: $mainFontFamily;
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 125%;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
+}
+
+.articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-bottom: 96px;
+}
+
+.article {
+    padding: 20px;
+    border-radius: 62px;
+    border: 1px solid #E7E7E7;
+    box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+
+    &__img {
+        border-radius: 50px 50px 0 0;
+    }
+
+    &__title {
+        width: 124px;
+        height: 41px;
+        border-radius: 8px 8px 8px 0px;
+        background-color: #FFF;
+
+        color: $textColor;
+        font-family: $secondFontFamily;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 200%;
+        letter-spacing: 0.16px;
+        text-transform: capitalize;
+
+        margin-top: -60px;
+        margin-left: 20px;
+        position: absolute;
+        padding: 4px 5px 8px 11px;
+        box-sizing: border-box;
+    }
+
+    &__text {
+        color: $titleColor;
+        font-family: $mainFontFamily;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 125%;
+        letter-spacing: 0.5px;
+        width: 306px;
+    }
+
+    &__data-and-arrow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__date {
+        color: $textColor;
+        font-family: $secondFontFamily;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.16px;
+        text-transform: capitalize;
+    }
+
+    &__arrow {
+        width: 52px;
+        height: 52px;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 101px;
+    margin-bottom: 134px;
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        width: 393px;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+
+        &_title {
+            font-family: $mainFontFamily;
+            font-size: 40px;
+            font-weight: normal;
+            line-height: 125%;
+        }
+    }
+
+    &__content {
+        color: $textColor;
+        font-family: $secondFontFamily;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.22px;
+
+        &_bold {
+            color: $titleColor;
+            font-family: $mainFontFamily;
+        }
+    }
+
+    &__average {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__staf {
+        width: 120px;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}

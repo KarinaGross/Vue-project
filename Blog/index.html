@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="header center">
+        <div class="header__left">
+            <img src="../img/Logo.svg" alt="logo" class="header__left_logo">
+            <a href="#" class="header__left_title">Interno</a>
+        </div>
+        <div class="header__right">
+            <a href="#" class="header__right_menu-item">Home</a>
+            <a href="#" class="header__right_menu-item">Project</a>
+            <a href="#" class="header__right_menu-item">Blog</a>
+        </div>
+    </header>
+    <main>
+        <div class="top-box">
+            <div class="top-box__content">
+                <p class="top-box__title">Articles & News</p>
+                <p class="top-box__text">Home / Blog</p>
+            </div>
+        </div>
+        <div class="post-box center">
+            <div class="post-box__heading">Latest Post</div>
+            <div class="post-box__main">
+                <img src="../img/postPhoto.png" alt="photo" class="post-box__photo"></img>
+                <div class="post-box__content">
+                    <div class="post-box__title">Low Cost Latest Invented Interior Designing Ideas</div>
+                    <div class="post-box__text">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis
+                        dignissim
+                        maximus.posuere in.Contrary to popular belief.
+
+                        Lorem Ipsum is not simply random text. It has roots in a piece of classica.</div>
+                    <div class="post-box__date">
+                        <div class="post-box__date_number">26 December,2022 </div>
+                        <svg class="post-box__date_arrow" xmlns="http://www.w3.org/2000/svg" width="52" height="53"
+                            viewBox="0 0 52 53" fill="none">
+                            <circle cx="26" cy="26.5" r="26" fill="#F4F0EC" />
+                            <path d="M23.771 33.1855L29.7139 26.4998L23.771 19.8141" stroke="#292F36" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="articles-news center">
+            <div class="articles-news__title">Articles & News</div>
+            <div class="articles" id="vue-box">
+                <div v-for="article in articles" :key="article.id" class="article">
+                    <img class="article__img" :src=" article.img " alt="img">
+                    <div class="article__title">{{ article.title}}</div>
+                    <div class="article__text">{{ article.text}}</div>
+                    <div class="article__data-and-arrow">
+                        <div class="article__date">{{ article.date}}</div>
+                        <img src="../img/arrow.svg" alt="arrow" class="article__arrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer center">
+        <div class="footer__left">
+            <div class="footer__logo">
+                <img src="../img/Logo.svg" alt="logo" class="footer__logo-img">
+                <a href="#" class="footer__logo_title">Interno</a>
+            </div>
+            <p class="footer__content">It is a long established fact that a reader will be distracted lookings.</p>
+        </div>
+        <div class="footer__average">
+            <p class="footer__content footer__content_bold">Pages</p>
+            <a href="#" class="footer__content">Home</a>
+            <a href="#" class="footer__content">Project</a>
+            <a href="#" class="footer__content">Blog</a>
+        </div>
+
+        <div class="footer__staf"></div>
+
+        <div class="footer__right">
+            <p class="footer__content footer__content_bold">Contact</p>
+            <p class="footer__content">55 East Birchwood Ave. Brooklyn, New York 11201</p>
+            <p class="footer__content">contact@interno.com</p>
+            <p class="footer__content">(123) 456 - 7890</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="../index.js"></script>
+</body>
+
+</html>
