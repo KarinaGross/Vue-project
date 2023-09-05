@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 53px;
+  padding-bottom: 56px;
+}
+.header__left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.header__left_title {
+  font-family: "DM Serif Display", serif;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 125%;
+  color: #292F36;
+}
+.header__right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 50px;
+  align-items: center;
+}
+.header__right_menu-item {
+  color: #292F36;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 125%;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: row;
+  gap: 57px;
+}
+
+.articles {
+  width: 799px;
+}
+
+.article__title {
+  color: #292F36;
+  font-family: "DM Serif Display", serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 1px;
+  margin-bottom: 11px;
+}
+.article__img {
+  width: 799px;
+  height: 539px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #C4C4C4;
+  margin-bottom: 46px;
+}
+.article__img_description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.16px;
+  text-transform: capitalize;
+}
+.article__img_description-right {
+  width: 249px;
+}
+.article__text {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+  margin-bottom: 36px;
+}
+.article__quote {
+  display: flex;
+  padding: 4px 227px 53px 227px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 27px;
+  border-radius: 50px;
+  background: #F4F0EC;
+  color: #CDA274;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 125%;
+  /* 31.25px */
+}
+.article__quote_quotes {
+  width: 106px;
+  height: 97px;
+  flex-shrink: 0;
+  color: #CDA274;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-size: 200px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 125%;
+  /* 250px */
+  letter-spacing: 4px;
+}
+
+.tags {
+  width: 345px;
+}
+.tags__title {
+  color: #292F36;
+  font-family: "DM Serif Display", serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+}
+.tags__fieldset {
+  border: none;
+  display: flex;
+  width: 335px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 11px;
+  flex-wrap: wrap;
+}
+.tags__checkbox {
+  position: absolute;
+  left: -100000px;
+}
+.tags__checkbox:checked + .tags__label {
+  color: #FFF;
+  background: #292F36;
+}
+.tags__label {
+  display: flex;
+  padding: 9px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #292F36;
+  text-align: center;
+  font-family: Jost;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  /* 22.5px */
+  letter-spacing: 0.36px;
+  border-radius: 10px;
+  background: #F4F0EC;
+}
+.tags__label:hover {
+  color: #FFF;
+  background: #292F36;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 101px;
+  margin-bottom: 134px;
+}
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 393px;
+}
+.footer__logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.footer__logo_title {
+  font-family: "DM Serif Display", serif;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 125%;
+}
+.footer__content {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+.footer__content_bold {
+  color: #292F36;
+  font-family: "DM Serif Display", serif;
+}
+.footer__average {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer__staf {
+  width: 120px;
+}
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}/*# sourceMappingURL=style.css.map */

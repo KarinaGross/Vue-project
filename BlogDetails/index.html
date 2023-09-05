@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header center">
+        <div class="header__left">
+            <img src="../img/Logo.svg" alt="logo" class="header__left_logo">
+            <a href="#" class="header__left_title">Interno</a>
+        </div>
+        <div class="header__right">
+            <a href="#" class="header__right_menu-item">Home</a>
+            <a href="#" class="header__right_menu-item">Project</a>
+            <a href="#" class="header__right_menu-item">Blog</a>
+        </div>
+    </header>
+
+    <main id="vue-box">
+        <div class="page-photo"></div>
+        <div class="content-box center">
+            <div class="articles">
+                <div v-for="article in filterArticles" :key="article.id" class="article">
+                    <h2 class="article__title">{{ article.title }}</h2>
+                    <img class="article__img" :src="article.img" alt="img">
+                    <div class="article__img_description">
+                        <div class="article__img_description-left">{{ article.date }}</div>
+                        <div class="article__img_description-right">{{ article.section }}</div>
+                    </div>
+                    <p class="article__text">{{ article.text }}</p>
+                    <div class="article__quote"><span class="article__quote_quotes">“</span><br>{{ article.quote }}
+                    </div>
+                </div>
+            </div>
+            <div class="tags">
+                <div class="tags__title">Tags</div>
+                <fieldset class="tags__fieldset">
+                    <div v-for="item in filterTags" :key="item.id">
+                        <input v-model="item.checked" class="tags__checkbox" type="checkbox" name="tag" :id="item.name">
+                        <label :for="item.name" class="tags__label">{{ item.name }}</label>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer center">
+        <div class="footer__left">
+            <div class="footer__logo">
+                <img src="../img/Logo.svg" alt="logo" class="footer__logo-img">
+                <a href="#" class="footer__logo_title">Interno</a>
+            </div>
+            <p class="footer__content">It is a long established fact that a reader will be distracted lookings.</p>
+        </div>
+        <div class="footer__average">
+            <p class="footer__content footer__content_bold">Pages</p>
+            <a href="#" class="footer__content">Home</a>
+            <a href="#" class="footer__content">Project</a>
+            <a href="#" class="footer__content">Blog</a>
+        </div>
+
+        <div class="footer__staf"></div>
+
+        <div class="footer__right">
+            <p class="footer__content footer__content_bold">Contact</p>
+            <p class="footer__content">55 East Birchwood Ave. Brooklyn, New York 11201</p>
+            <p class="footer__content">contact@interno.com</p>
+            <p class="footer__content">(123) 456 - 7890</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.30/vue.global.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
