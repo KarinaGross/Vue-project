@@ -7,7 +7,7 @@
             </div>
             <div class="header__right">
                 <router-link to="/" class="header__right_menu-item">Home</router-link>
-                <router-link to="/blogdetails" href="#" class="header__right_menu-item">Project</router-link>
+                <router-link to="/project" href="#" class="header__right_menu-item">Project</router-link>
                 <router-link to="/blog" href="#" class="header__right_menu-item">Blog</router-link>
             </div>
         </header>

@@ -256,5 +256,6 @@ export default {
 .tags__label:hover {
     color: #FFF;
     background: #292F36;
-}</style>
+}
+</style>
   
