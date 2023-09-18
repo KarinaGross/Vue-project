@@ -57,37 +57,37 @@ export default {
         return {
             articles: [
                 {
-                    img: '@/assets/img/articlesAndNews1.png',
+                    img: 'https://i.ibb.co/brgLGGv/articles-And-News1.png',
                     title: 'Kitchan Design',
                     text: 'Let’s Get Solution For Building Construction Work',
                     date: '26 December,2022 '
                 },
                 {
-                    img: '@/assets/img/articlesAndNews2.png',
+                    img: 'https://i.ibb.co/5Gp9B4p/articles-And-News2.png',
                     title: 'Living Design',
                     text: 'Low Cost Latest Invented Interior Designing Ideas',
                     date: '22 December,2022 '
                 },
                 {
-                    img: '@/assets/img/articlesAndNews3.png',
+                    img: 'https://i.ibb.co/wp6nzNQ/articles-And-News3.png',
                     title: 'Interior Design',
                     text: 'Best For Any Office & Business Interior Solution',
                     date: '25 December,2022 '
                 },
                 {
-                    img: '@/assets/img/articlesAndNews4.png',
+                    img: 'https://i.ibb.co/xDhLtGv/articles-And-News4.png',
                     title: 'Kitchan Design',
                     text: 'Let’s Get Solution For Building Construction Work',
                     date: '26 December,2022 '
                 },
                 {
-                    img: '@/assets/img/articlesAndNews5.png',
+                    img: 'https://i.ibb.co/LvZQrw3/articles-And-News5.png',
                     title: 'Living Design',
                     text: 'Low Cost Latest Invented Interior Designing Ideas',
                     date: '22 December,2022 '
                 },
                 {
-                    img: '@/assets/img/articlesAndNews6.png',
+                    img: 'https://i.ibb.co/s3hdyNm/articles-And-News6.png',
                     title: 'Interior Design',
                     text: 'Best For Any Office & Business Interior Solution',
                     date: '25 December,2022 '

@@ -49,7 +49,7 @@ export default {
             articles: [
                 {
                     title: 'Let’s Get Solution for Building Construction Work',
-                    img: '@/assets/img/kitchenPhoto2.png',
+                    img: 'https://i.ibb.co/mzf7wVd/kitchen-Photo1.png',
                     altImg: 'Kitchen',
                     date: '26 December,2022',
                     section: 'Interior / Home / Decore',
@@ -65,7 +65,7 @@ export default {
                 },
                 {
                     title: 'Design sprints are great',
-                    img: '@/assets/img/kitchenPhoto2.png',
+                    img: 'https://i.ibb.co/VTmpCrK/kitchen-Photo2.png',
                     altImg: 'Kitchen',
                     date: '29 December,2022',
                     section: 'Interior / Home / Decore',
@@ -74,7 +74,7 @@ export default {
                 },
                 {
                     title: 'Neoclassical-style bedroom',
-                    img: '@/assets/img/bedroomPhoto1.jpg',
+                    img: 'https://i.ibb.co/KW4qTM4/bedroom-Photo1.webp',
                     altImg: 'Bedroom',
                     date: '30 December,2022',
                     section: 'Interior / Home / Decore',
@@ -109,6 +109,7 @@ export default {
     display: flex;
     flex-direction: row;
     gap: 57px;
+    margin-bottom: 200px;
 }
 
 .articles {
